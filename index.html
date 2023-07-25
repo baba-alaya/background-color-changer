@@ -10,16 +10,17 @@
     * {
         margin: 0%;
         padding: 0%;
+        text-decoration: none;
     }
 
     nav {
         display: flex;
         justify-content: space-between;
-        padding: 10px 100px;
+        padding: 10px 70px;
     }
 
     nav>div a {
-        padding-left: 10px;
+        padding-left: 20px;
     }
 
     .wrapper {
@@ -54,6 +55,15 @@
         border-radius: 4px;
         color: white;
     }
+
+   @media screen and (max-width: 768px) {
+    nav {
+        padding:10px 50px;
+   }
+   nav>div a {
+        padding-left: 10px;
+    }
+
 </style>
 
 <body>
