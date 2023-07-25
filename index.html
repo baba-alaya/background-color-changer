@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 100px;
+    }
+
+    nav>div a {
+        padding-left: 10px;
+    }
+
+    .wrapper {
+        height: 100vh;
+    }
+
+    .content {
+        width: 100%;
+        height: calc(100vh - 40px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .content p {
+        padding-bottom: 8px;
+        text-align: center;
+    }
+
+    .btns {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .content>div button {
+        padding: 7px 8px;
+        background-color: transparent;
+        border: none;
+        border: 1px solid white;
+        border-radius: 4px;
+        color: white;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper">
+        <nav>
+            <p>Color changer</p>
+            <div>
+                <a href="">rgb</a>
+                <a href="./hex.html">hex</a>
+            </div>
+        </nav>
+        <div class="content">
+            <div>
+                <p class="color">Green</p>
+                <div class="btns">
+                    <button class="change-color">change color</button>
+                    <button class="copy-code">copy color code</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./rgb.js"></script>
+
+
+</html>
